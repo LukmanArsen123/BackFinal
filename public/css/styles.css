@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #d9e8f5);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation Bar Styling */
+  nav {
+    background-color: #3b5998;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #dfe3ee;
+  }
+  
+  /* Editor Page Styling */
+  .editor-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    flex-grow: 1;
+  }
+  
+  .form-container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b5998;
+  }
+  
+  .editor-form .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .editor-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .editor-form input[type="text"],
+  .editor-form textarea,
+  .editor-form input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+  }
+  
+  .editor-form input[type="text"]:focus,
+  .editor-form textarea:focus {
+    border: 1px solid #3b5998;
+    background-color: #ffffff;
+  }
+  
+  .editor-form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .editor-form .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: #3b5998;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .editor-form .submit-button:hover {
+    background: #2a4373;
+  }
+  

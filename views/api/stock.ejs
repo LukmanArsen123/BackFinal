@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Stock Data</title>
+</head>
+<body>
+  <%- include('../partials/nav') %>
+  <div class="container">
+    <h1>Stock Data</h1>
+    <% if (stockData && stockData.quoteSummary && stockData.quoteSummary.result) { %>
+      <pre><%= JSON.stringify(stockData.quoteSummary.result, null, 2) %></pre>
+    <% } else { %>
+      <p>No stock data available at the moment.</p>
+    <% } %>
+  </div>
+  <%- include('../partials/footer') %>
+</body>
+</html>

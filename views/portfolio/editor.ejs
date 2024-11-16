@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Editor - Add Portfolio Item</title>
+</head>
+<body>
+  <%- include('../partials/nav') %>
+  <div class="container editor-container">
+    <h1>Add New Portfolio Item</h1>
+    <form action="/portfolio/create" method="POST" enctype="multipart/form-data" class="editor-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Enter description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="images">Upload Images</label>
+        <input type="file" id="images" name="images" multiple required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+  <%- include('../partials/footer') %>
+</body>
+</html>

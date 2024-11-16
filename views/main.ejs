@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Main Page</title>
+</head>
+<body>
+  <%- include('./partials/nav') %>
+  <h1>Welcome to the Portfolio Platform!</h1>
+  <% if (user) { %>
+    <p>Hello, <%= user.role %>!</p>
+  <% } else { %>
+    <p>Please <a href="/auth/login">log in</a> or <a href="/auth/register">register</a>.</p>
+  <% } %>
+  <%- include('./partials/footer') %>
+</body>
+</html>
